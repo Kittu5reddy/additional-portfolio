@@ -302,17 +302,18 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* margin-left: 30px; */
   /* margin-left: 40px; */
   hr {
     align-self: flex-start;
   }
+  gap: 2rem;
 }
 
 #typesofprojects {
   align-self: flex-start;
   display: flex;
   gap: 1.5rem;
-  margin-top: 30px;
   margin-left: 30px;
 }
 
@@ -323,26 +324,24 @@ nav {
   opacity: 0.5;
 }
 
-.projectcontainer {
-  margin-top: 30px;
+.projectscontainer {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .project {
-  height: 300px;
   width: 300px;
-  border: solid 1px rgb(54, 54, 54);
-  border-radius: 15px;
-  color: wheat;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  border: solid 1px rgb(54, 54, 54);
+  border-radius: 20px;
+  /* align-content: center; */
 }
 
 .mapContainer {
@@ -833,5 +832,15 @@ nav h4.Active {
   #button {
     align-self: flex-end;
     position: unset;
+  }
+
+  .education,
+  .dotsandmatter,
+  .experience,
+  #skills,
+  .devcontainers,
+  #skillshead,
+  .dotsandmatterexp {
+    display: none;
   }
 }

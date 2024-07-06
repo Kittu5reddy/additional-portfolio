@@ -71,7 +71,7 @@ const resume = document
   </div>
   <div class="education">
     <div class="imgandheading">
-      <img src="/assets/images/education.svg" alt="" />
+      <img src="./assets/images/education.svg" alt="" />
       <h2>Education</h2>
     </div>
     <hr class="lines" />
@@ -114,13 +114,13 @@ const resume = document
 
   <div class="experience">
     <div class="imgandheadingexp">
-      <img src="/assets/images/education.svg" alt="" />
+      <img src="./assets/images/education.svg" alt="" />
       <h2>Education</h2>
     </div>
     <hr class="lines" />
   </div>
   <div class="dotsandmatterexp">
-    <img src="/assets/images/dot.png" alt="" />
+    <img src="./assets/images/dot.png" alt="" />
     <div class="dotmatteraexp">
       <h2>University School Of The Arts</h2>
       <h3>2007 — 2008</h3>
@@ -132,7 +132,7 @@ const resume = document
   </div>
 
   <div class="dotsandmatterexp">
-    <img src="/assets/images/dot.png" alt="" />
+    <img src="./assets/images/dot.png" alt="" />
     <div class="dotmatteraexp">
       <h2>University School Of The Arts</h2>
       <h3>2007 — 2008</h3>
@@ -144,7 +144,7 @@ const resume = document
   </div>
 
   <div class="dotsandmatterexp">
-    <img src="/assets/images/dot.png" alt="" />
+    <img src="./assets/images/dot.png" alt="" />
     <div class="dotmatteraexp">
       <h2>University School Of The Arts</h2>
       <h3>2007 — 2008</h3>
@@ -160,18 +160,18 @@ const resume = document
       <h1 id="Languagesheading">Languages</h1>
       <div class="ContainerDev">
         <div class="devcontainers">
-          <img src="/assets/images/c.png" alt="" />
-          <img src="/assets/images/r.png" alt="" />
-          <img src="/assets/images/icons8-java-100.png" alt="" />
+          <img src="./assets/images/c.png" alt="" />
+          <img src="./assets/images/r.png" alt="" />
+          <img src="./assets/images/icons8-java-100.png" alt="" />
         </div>
         <div class="devcontainers">
-          <img src="/assets/images/js.png" alt="" />
-          <img src="/assets/images/mysql.png" alt="" />
-          <img src="/assets/images/mongodb.png" alt="" />
+          <img src="./assets/images/js.png" alt="" />
+          <img src="./assets/images/mysql.png" alt="" />
+          <img src="./assets/images/mongodb.png" alt="" />
         </div>
 
         <div class="devcontainers">
-          <img src="/assets/images/python.png" alt="" />
+          <img src="./assets/images/python.png" alt="" />
         </div>
       </div>
     </div>
@@ -179,20 +179,20 @@ const resume = document
       <h1 id="developmentheading">Development</h1>
       <div class="ContainerDev">
         <div class="devcontainers">
-          <img src="/assets/images/html.png" alt="" />
-          <img src="/assets/images/css.png" alt="" />
-          <img src="/assets/images/mern.png" alt="" />
+          <img src="./assets/images/html.png" alt="" />
+          <img src="./assets/images/css.png" alt="" />
+          <img src="./assets/images/mern.png" alt="" />
         </div>
         <div class="devcontainers">
-          <img src="/assets/images/pytorch.png" alt="" />
-          <img src="/assets/images/django.png" alt="" />
-          <img src="/assets/images/flask.png" alt="" />
+          <img src="./assets/images/pytorch.png" alt="" />
+          <img src="./assets/images/django.png" alt="" />
+          <img src="./assets/images/flask.png" alt="" />
         </div>
 
         <div class="devcontainers">
-          <img src="/assets/images/git.png" alt="" />
-          <img src="/assets/images/docker.png" alt="" />
-          <img src="/assets/images/spring.png" alt="" />
+          <img src="./assets/images/git.png" alt="" />
+          <img src="./assets/images/docker.png" alt="" />
+          <img src="./assets/images/spring.png" alt="" />
         </div>
       </div>
     </div>
@@ -204,7 +204,23 @@ const resume = document
 const projects = document
   .getElementById("PROJECTS")
   .addEventListener("click", () => {
-    const content = ``;
+    const content = `<div id="projects">
+    <h1 class="heading">Projects</h1>
+    <hr class="Line" />
+    <div id="typesofprojects">
+      <p class="types">ALL</p>
+      <p class="types">Web Applications</p>
+      <p class="types">Machine Learning</p>
+    </div>
+    <div class="projectscontainer">
+      <div class="project">COMING SOON...</div>
+      <div class="project">COMING SOON...</div>
+      <div class="project">COMING SOON...</div>
+    </div>
+    </div>
+    </div>
+   
+  </div>`;
     updateContent("PROJECTS", content, "950px");
   });
 
@@ -218,7 +234,7 @@ const contact = document
       <iframe
         id="map"
         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7614.737403452289!2d78.53292052928852!3d17.394084795984675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1719875497609!5m2!1sen!2sin"
-        width="900"
+        width="930"
         height="600"
         style="border: 0"
         allowfullscreen=""
@@ -241,7 +257,7 @@ const contact = document
 document.getElementById("container-1").addEventListener("mouseover", () => {
   document.getElementById(
     "imgcontainer"
-  ).innerHTML = `<img src="/assets/images/mypic.jpeg " style=" width:190px ; border-radius:40px ; " alt="">`;
+  ).innerHTML = `<img src="/assets/images/mypic.jpeg " style=" width:100px ; border-radius:20px ; " alt=""> `;
 });
 
 document.getElementById("container-1").addEventListener("mouseout", () => {
