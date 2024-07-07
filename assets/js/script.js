@@ -281,7 +281,7 @@ function applyMediaQueryStyles() {
           container.style.height = "1800px";
           break;
         case "RESUME":
-          container.style.height = "2000px";
+          container.style.height = "2050px";
           break;
         case "PROJECTS":
           container.style.height = "1200px";

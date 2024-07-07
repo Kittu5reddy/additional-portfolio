@@ -557,6 +557,10 @@ textarea {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  hr {
+    width: 0px;
+    height: 250px;
+  }
 }
 
 .Languages,
@@ -620,15 +624,10 @@ textarea {
 /* Define basic styles for the navigation links */
 nav h4 {
   cursor: pointer;
-  /* padding: 10px; */
-  /* margin: 0 10px; */
 }
 
 nav h4.Active {
   color: hsl(45, 100%, 72%);
-  /* background-color: rgb(90, 77, 5); */
-  /* background-color: #007ff; or any other color you prefer */
-  /* border-radius: 5px; */
 }
 
 .cv {
@@ -658,9 +657,14 @@ responsive
     margin: 0px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 0rem;
+    position: -webkit-sticky;
+  }
+  .containers {
+    width: auto;
+    width: 430px;
   }
   #container-1 {
     margin: 15px;
@@ -704,14 +708,12 @@ responsive
     display: none;
   }
   #container-2 {
+    margin-left: 0px;
     margin-top: 0px;
-    width: 400px;
+    width: 420px;
     height: 1700px;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly; */
-    /* align-items: center; */
-    /* align-content: center; */
   }
   .heading {
     margin-top: 20px;
@@ -842,10 +844,22 @@ responsive
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    justify-content: center;
+    /* align-items: center; */
   }
   .lines {
     height: 2000px;
+    /* align-co: flex-start; */
     display: none;
+  }
+  .dotsandmatterexp,
+  .dotsandmatter {
+    position: relative;
+    right: 20px;
+  }
+  .imgandheadingexp {
+    position: relative;
+    margin: 0px;
   }
   #skills {
     margin-left: 0px;
@@ -874,6 +888,8 @@ responsive
     position: unset;
     align-self: center;
     position: relative;
+    left: 0px;
+    bottom: 490px;
   }
 }
 
