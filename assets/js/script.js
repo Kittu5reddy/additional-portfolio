@@ -257,11 +257,11 @@ const contact = document
 document.getElementById("container-1").addEventListener("mouseover", () => {
   document.getElementById(
     "imgcontainer"
-  ).innerHTML = `<img src="/assets/images/mypic.jpeg " style=" width:100px ; border-radius:20px ; " alt=""> `;
+  ).innerHTML = `<img src="./assets/images/mypic.jpeg " style=" width:100px ; border-radius:20px ; " alt=""> `;
 });
 
 document.getElementById("container-1").addEventListener("mouseout", () => {
   document.getElementById(
     "imgcontainer"
-  ).innerHTML = `<img src="/assets/images/my-avatar.png" alt="">`;
+  ).innerHTML = `<img src="./assets/images/my-avatar.png" alt="">`;
 });
