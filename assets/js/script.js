@@ -60,6 +60,7 @@ const about = document
     </div>
     </div>`;
     updateContent("ABOUTMELINK", content, "1800px");
+    applyMediaQueryStyles();
   });
 
 const resume = document
@@ -199,6 +200,7 @@ const resume = document
   </div>
   <button class="cv" type="button">DOWNLOAD CV</button>`;
     updateContent("RESUME", content, "1500px");
+    applyMediaQueryStyles();
   });
 
 const projects = document
@@ -222,6 +224,7 @@ const projects = document
    
   </div>`;
     updateContent("PROJECTS", content, "950px");
+    applyMediaQueryStyles();
   });
 
 const contact = document
@@ -251,13 +254,14 @@ const contact = document
       <input type="submit" id="button" value="Send Message">
     </form>
   </div>`;
-    updateContent("CONTACT", content, "1200px");
+    updateContent("CONTACT", content, "1300px");
+    applyMediaQueryStyles();
   });
 
 document.getElementById("container-1").addEventListener("mouseover", () => {
   document.getElementById(
     "imgcontainer"
-  ).innerHTML = `<img src="./assets/images/mypic.jpeg " style=" width:100px ; border-radius:20px ; " alt=""> `;
+  ).innerHTML = `<img src="./assets/images/mypic.jpeg " style=" width:190px ; border-radius:20px ; " alt=""> `;
 });
 
 document.getElementById("container-1").addEventListener("mouseout", () => {
@@ -265,3 +269,29 @@ document.getElementById("container-1").addEventListener("mouseout", () => {
     "imgcontainer"
   ).innerHTML = `<img src="./assets/images/my-avatar.png" alt="">`;
 });
+
+function applyMediaQueryStyles() {
+  const container = document.getElementById("container-2");
+  const activeLink = document.querySelector("nav h4.Active");
+  if (window.matchMedia("(max-width: 1000px)").matches) {
+    if (activeLink) {
+      const activeLinkId = activeLink.id;
+      switch (activeLinkId) {
+        case "ABOUTMELINK":
+          container.style.height = "1800px";
+          break;
+        case "RESUME":
+          container.style.height = "2000px";
+          break;
+        case "PROJECTS":
+          container.style.height = "1200px";
+          break;
+        case "CONTACT":
+          container.style.height = "1200px";
+          break;
+        default:
+          container.style.height = "2000px";
+      }
+    }
+  }
+}

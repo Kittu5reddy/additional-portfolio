@@ -645,10 +645,9 @@ nav h4.Active {
   background-color: hsl(45, 100%, 72%);
   color: #212121;
 }
-
-/*                 */
-/*     RESPONSIVE     */
-/*                 */
+/*-----------------
+responsive 
+ ------------------*/
 
 @media (max-width: 1000px) {
   * {
@@ -788,6 +787,7 @@ nav h4.Active {
     gap: 2rem;
     align-self: center;
     border-radius: 25px 25px 0 0;
+    width: 360px;
   }
 
   #Contact {
@@ -834,13 +834,57 @@ nav h4.Active {
     position: unset;
   }
 
-  .education,
-  .dotsandmatter,
-  .experience,
-  #skills,
-  .devcontainers,
-  #skillshead,
-  .dotsandmatterexp {
+  #resume {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .lines {
+    height: 2000px;
     display: none;
+  }
+  #skills {
+    margin-left: 0px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: unset; */
+    hr {
+      width: 300px;
+      margin-left: 50px;
+      align-self: flex-start;
+    }
+  }
+  .Languages,
+  .development {
+    width: 380px;
+    img {
+      width: 60px;
+      height: 60px;
+    }
+    align-self: flex-start;
+  }
+  .cv {
+    position: unset;
+    align-self: center;
+    position: relative;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    margin-left: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+    /* background-color: aqua; */
+  }
+
+  #container {
+    margin-left: 20px;
   }
 }
